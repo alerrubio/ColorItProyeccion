@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color It!</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="lib/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="js/classes.js" type="text/javascript"></script>
+    <script src="js/main_menu.js" type="text/javascript"></script>
+    <script src="js/sound-effects.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="header">
+            <img id="logo" src="resources/logo.png" alt="">
+        </div>
+
+        <div id="countdown">
+
+        </div>
+        
+        <div class="splatter">
+            <div id="content" class="content">
+                <button id="solo_paint" class="boton main-menu" onclick="playClick();">
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color1"></span>
+                    <span class="btn-paint color2"></span>
+                    <span class="btn-paint color3"></span>
+                    <span class="btn-label">Solo-Paint</span>
+                </button>
+                <button id="paint_for_all" class="boton main-menu" onclick="playClick();">
+                    <span class="btn-paint color4"></span>
+                    <span class="btn-paint color5"></span>
+                    <span class="btn-paint color6"></span>
+                    <span class="btn-paint color7"></span>
+                    <span class="btn-label">Paint For All</span>
+                </button>
+
+                <div class="second_player">
+                    <label for="player_2_name">Nombre del jugador 2:</label>
+                    <input type="text" name="player_2_name" id="player_2_name">
+                    <button id="add_player_2" class="btn-player2" onclick="playClick();  setTimeout(function(){addPlayerTwo();},250);">
+                        Guardar
+                    </button>
+                </div>
+                
+
+                <button id="level_1" class="boton level multi" onclick="playClick();  setTimeout(function(){location.href = 'city_level.html';},250);">
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-label">Color City</span>
+                </button>
+                <button id="level_2" class="boton level multi" onclick="playClick();  setTimeout(function(){location.href = 'court_level.html';},250);">
+                    <span class="btn-paint color3"></span>
+                    <span class="btn-paint color3"></span>
+                    <span class="btn-paint color3"></span>
+                    <span class="btn-paint color3"></span>
+                    <span class="btn-label">Paint Court</span>
+                </button>
+                <button id="level_3" class="boton level multi" onclick="playClick(); setTimeout(function(){location.href = 'beach_level.html';},250);">
+                    <span class="btn-paint color5"></span>
+                    <span class="btn-paint color5"></span>
+                    <span class="btn-paint color5"></span>
+                    <span class="btn-paint color5"></span>
+                    <span class="btn-label">Brush Island</span>
+                </button>
+                <button id="level_11" class="boton level singleplayer" onclick="playClick();  setTimeout(function(){location.href = 'city_level_single.html';},250);">
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-label">Color City</span>
+                </button>
+                <button id="level_21" class="boton level singleplayer" onclick="playClick();  setTimeout(function(){location.href = 'court_level_single.html';},250);">
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-label">Paint Court</span>
+                </button>
+                <button id="level_31" class="boton level singleplayer" onclick="playClick();  setTimeout(function(){location.href = 'beach_level_single.html';},250);">
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-paint color0"></span>
+                    <span class="btn-label">Brush Island</span>
+                </button>
+
+                <div id="opciones">
+                    <a class=" opcion" id="configuracion" onclick="playClick(); setTimeout(function(){location.href = 'opciones.html';},250);">
+                        <span class=" bi bi-gear-fill"></span>  
+                    </a>
+                    <a class="opcion" id="puntuacion" onclick="playClick(); setTimeout(function(){location.href = 'my_scores.html';},250);">
+                        <span class="bi bi-trophy-fill"></span>
+                    </a>   
+                    <a class="opcion" id="home" onclick="playClick();">
+                        <span class="bi bi-house-fill"></span>
+                    </a>  
+                    <a class=" opcion" id="informacion" onclick="playClick(); setTimeout(function(){location.href = 'informacion.html';},250);">
+                        <i class="bi bi-info-circle-fill"></i>
+                    </a>
+                </div>                            
+            </div>           
+        </div>
+            
+        </div>
+    </div>
+</body>
+</html>

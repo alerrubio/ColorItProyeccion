@@ -1,0 +1,146 @@
+
+@font-face {
+    font-family: "Staatliches";
+    src: url('../fonts/Staatliches-Regular.ttf');
+  }
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-image: url("../resources/bg_orange.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Staatliches";
+}
+
+.score-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+    background-image: url("../resources/bg_orange.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 7px solid orange;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../resources/swish2.png");
+    color: white;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    padding: 3px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.time_text{
+    margin-right: 10px;
+}
+
+.player{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    width: 300px;
+}
+
+.player1{
+    background-image: url("../resources/swish1.png");
+    overflow: hidden;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.player2{
+    background-image: url("../resources/swish4.png");
+    overflow: hidden;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.player_name{
+    background-image: url("../resources/swish3.png");
+    overflow: hidden;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    width: 200px;
+    padding: 3px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.player-icon{
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    margin-left: 50px;
+    background-image: url("../resources/white-splatter.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .score-space{
+    width: 120px;
+    padding: 3px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.score-player1{
+    background-image: url("../resources/red-splatter.png");
+    background-size: cover;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
+.score-player2{
+    background-image: url("../resources/blue-splatter.png");
+    background-size: cover;
+    background-position:left;
+    background-repeat: no-repeat;
+}
+
+#score1, #score2{
+    font-size: 30px;
+    color: white;
+    padding: 6px;
+}
+
+.scene_container{
+    background-image: url("../resources/GameBG.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 20px;
+}
+
+#scene-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

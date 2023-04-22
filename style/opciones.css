@@ -1,0 +1,344 @@
+@font-face {
+    font-family: "Japones";
+    src: url("fonts/Noto_Sans_JP/NotoSansJP-Regular.otf");
+}
+
+@font-face {
+    font-family: "ReenieBeenie";
+    src: url("fonts/ReenieBeanie-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Mansalva";
+    src: url('../fonts/Mansalva-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Staatliches";
+  src: url('../fonts/Staatliches-Regular.ttf');
+}
+
+body{
+    background-image: url("../resources/bg-blue.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Staatliches";
+    margin: 0px;
+
+  }
+
+  .opc_contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    
+    background-color: #804ab3;
+    padding: 10px 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.opc_header{
+    align-self: center;
+}
+
+.opc_body{
+    font-size:  40px;
+    color: white; 
+    width: 100%;
+}
+
+.opc_botones{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.opc_1, .opc_3{
+    background-color: #6f2baf;
+    padding: 20px;
+}
+
+.opc_1{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.opc_2{
+    background-color: #9948eb;
+    padding: 20px;
+}
+
+.opc_3{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.opc_guardar{
+    padding: 10px 40px;
+    font-family: "Staatliches";
+    color: white;
+    background-color: #e0ad05;
+    border-radius: 7px;
+    border: none;
+    margin: 0px 10px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.opc_guardar:hover{
+    color: black;
+    background-color: white;
+
+}
+
+.opc_logout{
+  padding: 10px 40px;
+  font-family: "Staatliches";
+  color: white;
+  background-color: #e03805;
+  border-radius: 7px;
+  border: none;
+  margin: 0px 10px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.opc_logout:hover{
+  color: black;
+  background-color: white;
+
+}
+
+.opc_home{
+    margin: 0px 10px;
+    cursor: pointer;
+    color: white;
+    transition: all 200ms;
+}
+
+.opc_home:hover{
+    color: #e0ad05;
+
+}
+
+.opc_1_options{
+    font-size: 26px;
+}
+
+.opc_2_options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+
+.opc_3_options{
+    font-size: 26px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*Estilos de opciones de colores*/
+.opc_1_player1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.opc_1_player2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/*Estilos del input de sensibilidad, slider*/
+
+#sensibility{
+    margin: 20px;
+    color: #ffda5f;
+}
+
+input[type="range"] {
+    outline: 0;
+    border: 0;
+    border-radius: 500px;
+    width: 400px;
+    max-width: 100%;
+    margin: 24px 0 16px;
+    transition: box-shadow 0.2s ease-in-out;
+    overflow: hidden;
+    height: 30px;
+    -webkit-appearance: none;
+    background-color: #ddd;
+    margin: 0px 10px;
+}
+
+/*Barra del slider*/
+::-webkit-slider-runnable-track {
+    height: 30px;
+    -webkit-appearance: none;
+    color: #444;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+/*Circulo del slider*/
+::-webkit-slider-thumb {
+    width: 30px;
+    -webkit-appearance: none;
+    height: 30px;
+    border: white 3px solid;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: -340px 0 0 320px #1597ff, inset 0 0 0 40px #1597ff;
+    border-radius: 50%;
+    transition: box-shadow 0.2s ease-in-out;
+    position: relative;
+    
+}
+
+/*Estilos de radio button*/
+/* Contenedor */
+.radio_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 0px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Esconder los estilos default */
+  .radio_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* Hover de radio btn */
+  .radio_container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .radio_container input:checked ~ .checkmark {
+    background-color: #ffda5f;
+  }
+
+  /* Color de check del radio btn */
+  #color_red input:checked ~ .checkmark {
+    background-color: rgb(255, 0, 0);
+  }
+
+  #color_yellow input:checked ~ .checkmark {
+    background-color: #FFFF00;
+  }
+
+  #color_orange input:checked ~ .checkmark {
+    background-color: #ff8400;
+  }
+
+  #color_blue input:checked ~ .checkmark {
+    background-color: #0000FF;
+  }
+
+  #color_green input:checked ~ .checkmark {
+    background-color: #00FF00;
+  }
+
+  #color_pink input:checked ~ .checkmark {
+    background-color: #ff2bed;
+  }
+
+  
+  
+  /* Indicadores (cuando se le hace check) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Mostrar el indicador */
+  .radio_container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Estilo del indicador */
+  .radio_container .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 4px;
+    height: 4px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  #color_red{
+      color: rgb(255, 0, 0);
+      -webkit-text-fill-color: rgb(255, 255, 255); /* Will override color (regardless of order) */
+      font-weight: bold;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgb(255, 0, 0);
+  }
+
+  #color_yellow{
+    color: #ffff00;
+    -webkit-text-fill-color: rgb(255, 255, 255); /* Will override color (regardless of order) */
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFFF00;
+}
+
+#color_pink{
+    color: #ff2bed	;
+    -webkit-text-fill-color: rgb(255, 255, 255); /* Will override color (regardless of order) */
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ff2bed	;
+}
+
+#color_blue{
+    color: #0000FF;
+    -webkit-text-fill-color: rgb(255, 255, 255); /* Will override color (regardless of order) */
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0000ff;
+}
+
+#color_green{
+  color: #00FF00;
+  -webkit-text-fill-color: rgb(255, 255, 255); /* Will override color (regardless of order) */
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #00FF00;
+}
+
+#color_orange{
+  color: #ff8400;
+  -webkit-text-fill-color: rgb(255, 255, 255); /* Will override color (regardless of order) */
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ff8400;
+}
